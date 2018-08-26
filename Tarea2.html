@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+<section>
+    <article>
+            <center><h1>Form</h1></center>
+            <fieldset>
+            <legend>Your information</legend>
+            <form action="#" method="POST">
+            <fieldset>
+
+
+                <legend>Personal Data</legend>
+                <div>
+                <label for="nombre">First Name:</label>
+                <input type="text" placeholder="First Name" minlength="3" name="nombre" required>
+                <label>Last Name:</label>
+                <input type="text" placeholder="Last Name" minlength="3" name="apellido" required>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">M
+                <input type="radio" name="gender">F
+
+                <br>
+                <br>
+               
+                <label for="birth">Birthdate:</label>
+                <input type="date" min="1900-01-01" max="2018-12-31" name="birth" required>
+                <label for="animal">Favorite animal</label>
+
+                <select>
+                    <option>Lion</option>
+                    <option>Elephant</option>
+                    <option>Dolphin</option>
+                    <option>Giraffe</option>
+                    <option>Tiger</option>
+                    <option>Rabbit</option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Fish</option>
+                    <option>Duck</option>
+                    <option>Bird</option>
+                    <option>Penguin</option>
+                    <option>Whale</option>
+                    <option>Shark</option>
+                    <option>Sea lion</option>
+                    <option>Crocodile</option>
+                    <option>Monkey</option>
+                    <option>Deer</option>
+                    <option>Horse</option>
+                    <option>Chicken</option>
+                    <option>Pig</option>
+                    <option>Bear</option>
+                    <option>Panda</option>
+                    <option>Snake</option>
+                    <option>Turtle</option>
+                    <option>Other</option>
+                </select>
+                </div>
+
+            </fieldset>
+
+            <br>
+            <br>
+
+            <fieldset>
+
+                <legend>Account</legend>
+                <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="elsychavez@hotmail.com" required> 
+                <br>
+                <br>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <br>
+                <br>
+                <label>Verify Password:</label>
+                <input type="password" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+
+            </fieldset>
+
+            <br>
+            <br>
+
+            <fieldset>
+
+                <legend>Contact</legend>
+                <div>
+                <label for="adress">Adress:</label>
+                <input type="text" placeholder="P. Sherman, Calle Wallaby 42, Sydney" width="20" name="adress" required>
+                <label for="city">City:</label>
+                <input type="text" placeholder="Tokyo" required>
+                <label for="country">Country:</label>
+                <input type="text" placeholder="Japan" required>
+                <br>
+                <br>
+                <label for="phone">Contact Number:</label>
+                <input name="phone" type="text" placeholder="2222-2222" pattern="[0-9]{4}-[0-9]{4}" required>
+                </div>
+
+            </fieldset>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Send" >
+            <input type="reset" value="Cancel">
+
+        </fieldset>
+        </form>
+
+    </article>
+
+</section> 
+
+
+</body>
+
+</html>
